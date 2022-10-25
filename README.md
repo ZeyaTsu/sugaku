@@ -12,9 +12,9 @@ import sugaku
 
 sugaku.length = 1 # max_digit_length, 1= 1number, 2=2numbers (example sugaku.length=2 OUTPUT BETWEEN 1 TO 99   
 
-sugaku.oper('with') # OUTPUT: "calculus = result"
-sugaku.oper('no-res') # OUTPUT: "calculus"
-sugaku.oper('res') # OUTPUT: "result"
+sugaku.oper('with') # with  :  return the calculus and its result
+sugaku.oper('no-res') # no-res  :  return only the calculus
+sugaku.oper('res') # res  :  return only the result
 ```
 
 # Examples
