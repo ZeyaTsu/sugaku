@@ -15,6 +15,8 @@ sugaku.length = 1 # max_digit_length, 1= 1number, 2=2numbers (example sugaku.len
 sugaku.oper('with') # with  :  return the calculus and its result
 sugaku.oper('no-res') # no-res  :  return only the calculus
 sugaku.oper('res') # res  :  return only the result
+
+sugaku.clear() # clear all (IMPORTANT)
 ```
 
 # Examples
@@ -25,3 +27,34 @@ sugaku.oper('res') # res  :  return only the result
 ### OUTPUT: 74/56*83
 ![ex3](https://user-images.githubusercontent.com/43354103/197817254-f9be704b-5b9e-46e0-8817-6f58ed982e50.JPG) (res mode)
 ### OUTPUT: 113
+
+```py
+import sugaku
+
+# res mode
+sugaku.length = 2
+sugaku.clear()
+
+calculus = sugaku.oper('res')
+calculus = sugaku.convert(calculus)
+
+print(calculus)
+
+# no-res mode
+sugaku.length = 2
+sugaku.clear()
+
+calculus = sugaku.oper('no-res')
+calculus = sugaku.convert(calculus)
+
+print(calculus)
+
+# with mode
+sugaku.length = 2
+sugaku.clear()
+
+calculus = sugaku.oper('with')
+calculus = sugaku.convert(calculus)
+
+print(calculus)
+```
