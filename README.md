@@ -5,7 +5,7 @@
 ## ⚠️ Functions length, oper(mode) are important to make it works!
 
 # Installation
-`pip install sugaku`
+## `pip install sugaku`
 
 # Usage
 ```py
