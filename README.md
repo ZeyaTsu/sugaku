@@ -10,7 +10,8 @@
 ```py
 import sugaku
 
-sugaku.length = 1 # max_digit_length, 1= 1number, 2=2numbers (example sugaku.length=2 OUTPUT BETWEEN 1 TO 99   
+sugaku.length = x # max_digit, 1= 1number, 2=2numbers (example sugaku.length=2 OUTPUT BETWEEN 1 TO 99   
+sukagu.calength = x # calulation_length, 2= x ? y, 4= x ? y ? z ? s etc..
 
 sugaku.oper('with') # with  :  return the calculus and its result
 sugaku.oper('no-res') # no-res  :  return only the calculus
@@ -33,6 +34,7 @@ import sugaku
 
 # res mode
 sugaku.length = 2
+sugaku.calength = 3
 sugaku.clear()
 
 calculus = sugaku.oper('res')
@@ -42,15 +44,18 @@ print(calculus)
 
 # no-res mode
 sugaku.length = 2
+sugaku.calength = 2
 sugaku.clear()
 
 calculus = sugaku.oper('no-res')
 calculus = sugaku.convert(calculus)
 
 print(calculus)
+print("-----------------------------------_")
 
 # with mode
-sugaku.length = 2
+sugaku.length = 1
+sugaku.calength = 5
 sugaku.clear()
 
 calculus = sugaku.oper('with')
