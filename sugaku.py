@@ -9,11 +9,14 @@ finalN = []
 finalC = []
 
 length = 1
-
+calength = 2
 
 
 def max_digit_length(length):
     return length
+
+def max_cal_length(calength):
+    return calength    
 
 def clear():
     list.clear(finalN)
@@ -39,9 +42,9 @@ def oper(mode:str):
     numbers()
     global operators
     max_len = max_digit_length(length)
+    cal_len = max_cal_length(calength)
 
-
-    for i in range(1, max_len+1): # Loop
+    for i in range(1, cal_len): # Loop
         op = random.choice(operators)
         finalN.append(op) # Adding operators, calling back numbers() to get the next one.
         numbers()
