@@ -1,5 +1,6 @@
 # Sugaku
-**Sugaku** is a Python module to generate a calculation chain.
+![sugaku](https://user-images.githubusercontent.com/43354103/197858110-3eb13116-3745-438b-a005-2b6464fafb76.png) <br />
+### **Sugaku** is a Python module to generate a calculation chain.
 
 # ⚠️ Functions length, oper(mode) import to make it works!
 
