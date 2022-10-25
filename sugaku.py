@@ -8,14 +8,21 @@ operators = ["+","-","/","*"]
 finalN = []
 finalC = []
 
+length = 1
 
-def max_digit_length(value):
-    return value
 
-    
+
+def max_digit_length(length):
+    return length
+
+def clear():
+    list.clear(finalN)
+    list.clear(finalC)
+
+
 def numbers(): 
     global operators
-    max_len = max_digit_length()
+    max_len = max_digit_length(length)
 
     for i in range(1, max_len+1):
         n = random.choice(num)
@@ -31,7 +38,7 @@ def numbers():
 def oper(mode:str):
     numbers()
     global operators
-    max_len = max_digit_length()
+    max_len = max_digit_length(length)
 
 
     for i in range(1, max_len+1): # Loop
@@ -43,7 +50,7 @@ def oper(mode:str):
     y = eval(y1) # Resolve
     y = str(y)
 
-    if mode == None:
+    if mode == 'with':
         return (y1,"=",y)
     if mode == 'no-res':
         return y1
