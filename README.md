@@ -6,6 +6,7 @@
 
 # Installation
 ## `pip install sugaku`
+## `pip install sugaku`
 
 # Usage
 ```py
