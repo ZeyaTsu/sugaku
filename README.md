@@ -52,7 +52,6 @@ calculus = sugaku.oper('no-res')
 calculus = sugaku.convert(calculus)
 
 print(calculus)
-print("-----------------------------------_")
 
 # with mode
 sugaku.length = 1
